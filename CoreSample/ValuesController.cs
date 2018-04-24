@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
-using System.Web.Http.Cors;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
-namespace Sample
+namespace CoreSample
 {
-    [RoutePrefix("api/Values")]   
-    public class ValuesController : ApiController
+    [Route("api/Values")]
+    public class ValuesController : Controller
     {
         // GET api/values
         public IEnumerable<string> Get()
